@@ -1,0 +1,21 @@
+.linearProgressContainer {
+    background: var(--secondary);
+}
+
+.linearProgress {
+    width: 80%;
+    height: 0.6rem;
+    background: linear-gradient(to bottom right, var(--secondary), rgb(68, 100, 189));
+    border-radius: 6px;
+    animation: progress 1.5s infinite ease-in-out;
+}
+
+@keyframes progress {
+    from {
+        transform: translate(0, 0)
+    }
+
+    to {
+        transform: translate(390px, 0)
+    }
+}
